@@ -66,12 +66,10 @@ public class Carro {
         System.out.println("Carro ligado!");
     }
 
-
-    // Método para exibir informações do carro
-    public void exibirInformacoes() {
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Ano: " + ano);
-        System.out.println("Quilometragem: " + quilometragem + " km");
+    @Override
+    public String toString(){
+        String carroInfo = getMarca() + " " + getModelo() + " " + getAno();
+        return carroInfo;
     }
+
 }

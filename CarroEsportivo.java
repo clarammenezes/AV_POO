@@ -14,12 +14,14 @@ public class CarroEsportivo extends Carro{
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
+
+
     public void acelerar(){
         System.out.println("Acelerando o carro esportivo");
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nVelocidade Máxima: " + velocidadeMaxima + " km/h" + "\nMarca: " + getMarca() + "\nModelo:" + getModelo() + "\nAno: " + getAno() + "\n Quilometragem" + getQuilometragem();
-    }
+        String carroEsportivoInfo = super.getMarca() + " " + super.getModelo() + " " + super.getAno();
+        return carroEsportivoInfo + "\nVelocidade Máxima: " + velocidadeMaxima + " km/h";    }
 }
